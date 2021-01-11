@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="">
+    <title>Exercice 1 : Nombre de caractères</title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+
+        body {
+            width: 50%;
+            max-width: 800px;
+            min-width: 480px;
+            margin: 0 auto;
+        }
+
+        .result {
+            color: white;
+            padding: 3px;
+        }
+
+        .numbers > li{
+            color : red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Listes nombres</h1>
+    <ul class="numbers">
+        <li>A= <span>1</span></li>
+        <li>B=<span>2</span></li>
+        <li>C=<span>3</span></li>
+        <ul>
+            <li>Hello</li>
+        </ul>
+    </ul>
+
+    <script>
+    let li = document.createElement('li');
+    li.innerHTML = "D = <span>4</span>";
+    console.log(li);
+
+    // Exercice sélectionnez et affichez l'élément HTML ul.numbers
+    let ul = document.querySelector('.numbers');
+    ul.appendChild(li);
+    let alphabets = ['D', 'E', 'F', 'G', 'H'];
+
+    let number = 7;
+    let message = 'A = <span>'+ number +'</span>';
+    console.log(message);
+    </script>
+</body>
+
+</html>
