@@ -41,18 +41,23 @@
     </ul>
 
     <script>
-    let li = document.createElement('li');
-    li.innerHTML = "D = <span>4</span>";
-    console.log(li);
-
-    // Exercice sélectionnez et affichez l'élément HTML ul.numbers
-    let ul = document.querySelector('.numbers');
-    ul.appendChild(li);
-    let alphabets = ['D', 'E', 'F', 'G', 'H'];
-
+    // let li = document.createElement('li');
+    // li.innerHTML = "D = <span>4</span>";
+    // console.log(li);
     let number = 7;
     let message = 'A = <span>'+ number +'</span>';
     console.log(message);
+
+    // Exercice sélectionnez et affichez l'élément HTML ul.numbers
+    let ul = document.querySelector('.numbers');
+    // ul.appendChild(li);
+    let alphabets = ['D', 'E', 'F', 'G', 'H'];
+    for(let i = 0; i < alphabets.length; i++){
+       // création d'un élément li
+       let li = document.createElement('li');
+       li.innerHTML = alphabets[i] + '=<span>' + (4 + i) + '</span>';
+       ul.appendChild(li); // ajoute le li au noeud ul
+    }
     </script>
 </body>
 
