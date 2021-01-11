@@ -22,6 +22,10 @@
             color: white;
             padding: 3px;
         }
+
+        .numbers > li{
+            color : red;
+        }
     </style>
 </head>
 
@@ -31,10 +35,30 @@
         <li>A= <span>1</span></li>
         <li>B=<span>2</span></li>
         <li>C=<span>3</span></li>
+        <ul>
+            <li>Hello</li>
+        </ul>
     </ul>
 
     <script>
-       
+    // document c'est la représentation de la page (arbre généalogique, le DOM) et la
+    // la fonction querySelectorAll elle permet de sélectionner des éléments de cet arbre généalogique
+    // let permet de définir une variable en JS
+    let els = document.querySelectorAll('.numbers > li');
+    // console.log permet d'afficher un résultat pour debug
+    console.log(els);
+
+    // Exercice
+    /*
+        Vous avez trois variables a, b et c
+        Permutez les valeurs a, b et c suivantes
+        Par exemple pour assigner la valeur b dans a :
+        a = b
+    */
+
+    let a = 1; // 2
+    let b = 2;  // 3
+    let c = 3; // 1
     </script>
 </body>
 
