@@ -31,15 +31,29 @@
 
 <body>
     <h1>Listes nombres</h1>
-    <ul class="numbers">
+    <div class="numbers">
        
-    </ul>
+    </div>
 
     <script>
         // Exercice 
         /*
             Affichez les tables de multiplication de 1 à 5
         */
+        let container = document.querySelector('.numbers');
+        let num = 5;
+        for(let table = 1; table <= num; table++){
+            let ul = document.createElement('ul');
+            let h2 = document.createElement('h2');
+            h2.innerHTML = "Table de : " + table;
+            ul.appendChild(h2);
+            for(let j = 1 ; j <= num; j++){
+                let li = document.createElement('li');
+                li.innerHTML = j +"X"+ table + "=" + table * j;
+                ul.appendChild(li);
+            }
+            container.appendChild(ul);
+        }
     </script>
 </body>
 

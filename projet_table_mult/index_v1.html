@@ -32,7 +32,6 @@
 <body>
     <h1>Listes nombres</h1>
     <ul class="numbers">
-       
     </ul>
 
     <script>
@@ -40,6 +39,13 @@
         /*
             Affichez la table de multiplication de 2
         */
+        let ul = document.querySelector('.numbers');
+        let num = 10;
+        for(let i = 1; i <= num; i++){
+            let li = document.createElement('li');
+            li.innerHTML = i +"X"+ 2 + "=" + 2 * i;
+            ul.appendChild(li);
+        }
     </script>
 </body>
 
