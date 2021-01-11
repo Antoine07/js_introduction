@@ -56,9 +56,31 @@
         a = b
     */
 
-    let a = 1; // 2
-    let b = 2;  // 3
-    let c = 3; // 1
+    let a = 1; // 3
+    let b = 2;  // 1
+    let c = 3; // 2
+    
+    let tmp;
+    tmp = a;
+    a = c;
+    c = b;
+    b = tmp;
+    console.log('a', a,  'b', b, 'c', c);
+    
+    // accéder aux éléments de la liste ul/li
+    console.log(els[0]);
+    console.log(els[1]);
+    console.log(els[2]);
+
+    let l1 = els[0] ; // premier li sélectionné
+    // console.log(l1.querySelector('span'))
+    // querySelector permet d'accéder au span du li
+    l1.querySelector('span').innerHTML = 3;
+    let l2 = els[1] ;
+    l2.querySelector('span').innerHTML = 1;
+    let l3 = els[2] ;
+    l3.querySelector('span').innerHTML = 2;
+
     </script>
 </body>
 
