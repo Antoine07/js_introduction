@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="">
+    <title>Exercice 1 : Nombre de caractères</title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+
+        body {
+            width: 50%;
+            max-width: 800px;
+            min-width: 480px;
+            margin: 0 auto;
+        }
+
+        .result {
+            color: white;
+            padding: 3px;
+        }
+
+        .numbers > li{
+            color : red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Listes nombres</h1>
+    <ul class="numbers">
+    </ul>
+
+    <script>
+        // Exercice 
+        /*
+            En utilisant les modulo 
+            number % 2 le reste de la division par 2
+            Affichez les multiplications paires de la table de 2
+            Utilisez également l'instruction conditionnelle if
+        */
+        let ul = document.querySelector('.numbers');
+        let num = 10;
+        for(let i = 1; i <= num; i++){
+            console.log(i % 2);
+            let li = document.createElement('li');
+            li.innerHTML = i +"X"+ 2 + "=" + 2 * i;
+            ul.appendChild(li);
+        }
+    </script>
+</body>
+
+</html>
