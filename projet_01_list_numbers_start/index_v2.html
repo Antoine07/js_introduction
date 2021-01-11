@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="">
+    <title>Exercice 1 : Nombre de caractères</title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+
+        body {
+            width: 50%;
+            max-width: 800px;
+            min-width: 480px;
+            margin: 0 auto;
+        }
+
+        .result {
+            color: white;
+            padding: 3px;
+        }
+
+        .numbers > li{
+            color : red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Listes nombres</h1>
+    <ul class="numbers">
+        <li>A= <span>1</span></li>
+        <li>B=<span>2</span></li>
+        <li>C=<span>3</span></li>
+        <ul>
+            <li>Hello</li>
+        </ul>
+    </ul>
+
+    <script>
+        // .numbers > li les enfants directs de la classe numbers
+    let els = document.querySelectorAll('.numbers > li');
+
+    // première valeur l'indice de départ
+    // deuxième valeur la borne à ne pas dépasser d'arrêt
+    // l'incrémentation de la boucle ici, i = i + 1, i++
+
+    let indices = [3,1,2];
+    // i = 0, 1, 2, els.length donne 3 ici : trois éléments dans le tableau
+    for(let i = 0; i < els.length; i++){
+        els[i].querySelector('span').innerHTML = indices[i];
+    }
+
+    </script>
+</body>
+
+</html>
