@@ -40,16 +40,20 @@
             En utilisant les modulo 
             number % 2 le reste de la division par 2
             Affichez les multiplications paires de la table de 3
-            Utilisez également l'instruction conditionnelle if
+            Une autre approche pour afficher les divisions paires avec l'instruction
+            continue dans une boucle
         */
         let ul = document.querySelector('.numbers');
         let num = 10;
-        for(let i = 1; i <= num; i++){
-            if( i % 2 == 0){
+        for(let i = 0; i <= num; i++){
+                if( i % 2 == 1) { 
+                    // lorsque cette instruction est exécutée la boucle passe à l'itération suivante
+                    // sans exécuter le code en dessous
+                    continue ; 
+                }
                 let li = document.createElement('li');
                 li.innerHTML = i +"X"+ 3 + "=" + 3 * i;
                 ul.appendChild(li);
-            }
         }
     </script>
 </body>
