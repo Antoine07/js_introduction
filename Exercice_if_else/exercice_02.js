@@ -54,4 +54,12 @@ console.log(b > 10  || b % 2 == 0 );
 
 // Exercice 
 // Trouvez b si il existe qui vérifie cette condition
+// true && true --> true
+//   b = 0, 2, 4, ..., 2n  && b est un multiple de 3, 0, 3, 6, 9, 12, ..., 3n
+// 3x2xn = 6n , 0, 6, 12, 18, 24, 30, 36, ...
 let test_v3 = ( b > 10  || b % 2 == 0) && b % 3 == 0;
+
+// Exercice 
+// Même exercice  attention && est pp sur ||
+let test_v4 =  b > 10 || b % 2 == 0 && b % 3 == 0;
+let test_v5 =  b > 10  || ( b % 2 == 0 && b % 3 == 0);
