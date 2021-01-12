@@ -35,4 +35,23 @@ true || false = true
 false || true = true
 false || false = false
 */
-let test_2 = b > 10 || b % 2 == 0;
+
+// Soit b > 10 donc ou est pair
+// b 0, 2, 4, 6, 8, ...et b > 10 ] 10, +infini [
+
+let b = 2;
+let test_2 = b > 10  || b % 2 == 0 ;
+console.log(test_2);
+
+b = 11;
+console.log( b > 10  ||  b % 2 == 0  );
+b = 10;
+console.log( b > 10  || b % 2 == 0 );
+
+b = 3;
+console.log(b > 10  || b % 2 == 0 );
+
+
+// Exercice 
+// Trouvez b si il existe qui vérifie cette condition
+let test_v3 = ( b > 10  || b % 2 == 0) && b % 3 == 0;
