@@ -61,5 +61,16 @@ let test_v3 = ( b > 10  || b % 2 == 0) && b % 3 == 0;
 
 // Exercice 
 // Même exercice  attention && est pp sur ||
-let test_v4 =  b > 10 || b % 2 == 0 && b % 3 == 0;
-let test_v5 =  b > 10  || ( b % 2 == 0 && b % 3 == 0);
+let c = 6*2;
+
+let test_v4 =  c > 10 || c % 2 == 0 && c % 3 == 0;
+console.log(test_v4);
+let test_v5 =  c > 10  || ( c % 2 == 0 && c % 3 == 0);
+console.log(test_v5);
+
+// let a = 10.5, b = 11, c = 12 ;
+
+for(let i = 0, j = 1; i < 100; i = 6*j, j++){
+    console.log(i > 10  || ( i % 2 == 0 && i % 3 == 0), i);
+}
+
