@@ -8,8 +8,7 @@ a, b et c ci-dessous.
 // let b = 17;
 // let c = 10;
 
-let a = 11, b = 17, c = 10;
-
+let a = 11, b = 17, c = 20, d = 27;
 let max ;
 
 if(a>b){
@@ -20,6 +19,10 @@ if(a>b){
 
 if(c > max){
     max = c;
+}
+
+if(d > max){
+    max = d;
 }
 
 console.log(max);
