@@ -8,5 +8,16 @@
 let message = "Mississippi";
 let letters = [];
 
+for(let i = 0; i < message.length; i++ ){
+    letters.push(message[i]);
+}
+
+console.log(letters);
+
 // reverse tableau
 let reverses_letters = [];
+for(let i = message.length - 1; i >= 0 ; i--){
+    reverses_letters.push(letters[i]);
+}
+
+console.log(reverses_letters);
