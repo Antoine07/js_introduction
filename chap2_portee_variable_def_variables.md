@@ -70,3 +70,49 @@ function baz() {
 
 baz();
 ```
+
+## Déclaration d'une constante
+
+Définition :
+**La variable définie avec const a une portée scopée au niveau du bloc dans lequel elle a été déclarée.**
+
+Le mot réservé du langage JS **const** permet de définir une constante, il permet de déclarer une variable à assignation unique. Vous êtes également obligé de lui assigner une valeur lors de sa déclaration.
+
+```js
+const API_KEY = "ABf#123@";
+
+console.log(API_KEY);
+```
+
+Une fois API_KEY définie vous ne pouvez pas re-définir cette variable ni même lui re-assigner une autre valeur.
+
+Une constante peut contenir tout type de variable. Dans le cas d'un objet comme un tableau par exemple, les valeurs du tableau sont modifiables(...) En effet, une constante bloque la ré-assignation de la variable mais, ne rend pas l'objet immuable.
+
+Vous pouvez donc effectuer les opérations suivantes sur la constante STUDENTS ci-dessous :
+
+```js
+
+const STUDENTS = ["Alan", "Bernard", "Jean"];
+
+STUDENTS.push("Sophie");
+
+console.log(STUDENTS);
+//["Alan", "Bernard", "Jean", "Sophie"]
+
+STUDENTS.pop();
+
+console.log(STUDENTS);
+// ["Alan", "Bernard", "Jean"]
+
+```
+
+Par contre ce qui suit est impossible, l'erreur suivante sera levée :
+**TypeError: Assignment to constant variable.**
+
+```js
+let newStudents = ["Alice"];
+
+// bloqué au niveau de la référence impossible
+// ré-assignation
+STUDENTS = newStudents;
+```
