@@ -20,7 +20,9 @@ student.address; // Paris
 
 ## Exercice littéral / array
 
-Soit le tableau populations de littéraux suivants, comptez le nombre de personne(s) qui a un nom dont la longueur des caractères est supérieur ou égal à 5.
+1. Soit le tableau populations de littéraux suivants, comptez le nombre de personne(s) qui a un nom dont la longueur des caractères est supérieur ou égal à 5.
+
+2. Comptez maintenant le nombre de nom qui possède un "a" dans son nom.
 
 ```js
 populations = [
