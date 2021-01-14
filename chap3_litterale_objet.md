@@ -47,17 +47,30 @@ populations = [
 
 Reprendre le tableau populations de l'exercice précédent.
 
-1. Créez une fonction search elle admet un paramètre name. Cette fonction recherchera un nom dans le littéral populations. Elle retournera true ou false selon qu'elle trouvera ou nom le nom rechercher.
+1. Créez une fonction search elle admet un paramètre name. Cette fonction recherchera un nom dans le littéral populations. Elle retournera true ou false selon qu'elle trouvera ou nom le nom rechercher. Cette première version est sensible à la casse.
 
 
 ```js
-
 function search(name){
     // TODO
 }
+
+search("Albert") ; // retourne true
+search("Alice") ; // retourne false
 ```
 
-2. Ajoutez une clé au littéral age et donnez les ages respectifs suivants :
+2. Faites une deuxième fonction qu'on appelera search_casse, elle sera insensible à la casse.
+
+```js
+function search_casse(name){
+    // TODO
+}
+
+search_casse("Albert") ; // retourne true
+search_casse("albert") ; // retourne true
+```
+
+3. Ajoutez une clé aux littéraux dans le tableau populations age et donnez les ages respectifs suivants aux personnes :
 
 ```js
 const ages = { 
@@ -75,5 +88,4 @@ const ages = {
     "Isaac" : 56,
     "Ian" : 45
 }
-
 ```
