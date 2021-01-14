@@ -11,11 +11,15 @@ const student = {
 }
 ```
 
-Pour accéder à un élément d'un littéral vous utiliserez la syntaxe suivante :
+Pour accéder à un élément d'un littéral vous utiliserez l'une syntaxe suivante :
 
 ```js
+// deux syntaxes possibles 
 student.name; // afficher Alan
+student["name"]; // afficher Alan
+
 student.address; // Paris
+student["address"]// Paris
 ```
 
 ## Exercice littéral / array
@@ -77,7 +81,7 @@ search_casse("Albert") ; // retourne true
 search_casse("albert") ; // retourne true
 ```
 
-3. Ajoutez une clé aux littéraux dans le tableau populations age et donnez les ages respectifs suivants aux personnes :
+3. Ajoutez une clé age aux littéraux dans le tableau populations et donnez les ages respectifs suivants à chacune des personnes :
 
 ```js
 const ages = { 
@@ -95,4 +99,6 @@ const ages = {
     "Isaac" : 56,
     "Ian" : 45
 }
+
+ages["Alan"]; // permet d'accéder à l'age d'Alan dans le littéral
 ```
