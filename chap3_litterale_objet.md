@@ -61,6 +61,13 @@ search("Alice") ; // retourne false
 
 2. Faites une deuxième fonction qu'on appelera search_casse, elle sera insensible à la casse.
 
+Rmq : vous pouvez utiliser la fonction toLowerCase pour mettre une chaîne de caractères en minuscule.
+
+```js
+let message = "MESSAGE";
+console.log(message.toLowerCase()); // message
+```
+
 ```js
 function search_casse(name){
     // TODO
