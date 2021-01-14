@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <p>1 Hello World !</p>
+        <p>2 Hello World !</p>
+        <p>3 Hello World !</p>
+    </div>
+    <script>
+        const p = document.querySelector('#root > p'); // <p>1 Hello World !</p>
+        p.innerHTML = "1 HELLO WORLD !";
+    </script>
+</body>
+</html>
