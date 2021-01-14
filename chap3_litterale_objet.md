@@ -1,6 +1,6 @@
 # Structure de données
 
-En JS vous pouvez définir une structure de données particulière, comme les tableaux, que l'on appelle des littéraux. Ces derniers sont des objets JS (nous reviendrons sur la définition d'un objet plus tard).
+En JS vous pouvez définir une **structure de données particulière**, comme les tableaux, que l'on appelle des littéraux. Ces derniers sont des **objets JS** (nous reviendrons sur la définition d'un objet plus tard).
 
 def d'un littéral :
 
@@ -40,5 +40,40 @@ populations = [
     { "id" : 11, "name" : "Isaac" },
     { "id" : 12, "name" : "Ian" }
 ]
+
+```
+
+## Exercice littéral / array partie 2
+
+Reprendre le tableau populations de l'exercice précédent.
+
+1. Créez une fonction search elle admet un paramètre name. Cette fonction recherchera un nom dans le littéral populations. Elle retournera true ou false selon qu'elle trouvera ou nom le nom rechercher.
+
+
+```js
+
+function search(name){
+    // TODO
+}
+```
+
+2. Ajoutez une clé au littéral age et donnez les ages respectifs suivants :
+
+```js
+const ages = { 
+    "Alan" : 16,
+    "Albert" : 19,
+    "Jhon" : 16,
+    "Brice": 90,
+    "Alexendra" : 77,
+    "Brad" : 89,
+    "Carl" : 67,
+    "Dallas" : 90,
+    "Dennis" : 75,
+    "Edgar" : 23,
+    "Erika" : 30,
+    "Isaac" : 56,
+    "Ian" : 45
+}
 
 ```
