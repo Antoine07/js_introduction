@@ -26,7 +26,9 @@ console.log( "bonjour le monde"  ? 'yes' : 'no'); // yes
 ```js
 false && user 
 ```
-Une deuxième évaluation courcicuit, renverra true
+JS fait une évaluation passive, si la première condition est fausse alors avec le connecteur logique ET, quelque soit la valeur de la deuxième condition, JS n'évalue pas la deuxième condition. En effet, pour que la phrase soit vraie avec ET il faut que les deux conditions soient vraies.
+
+Une deuxième évaluation courcicuit, renverra true, pas d'évaluation de la deuxième condition :
 
 ```js
 true || user
