@@ -34,10 +34,30 @@ Une deuxième évaluation courcicuit, renverra true, pas d'évaluation de la deu
 true || user
 ```
 
-## Exercice d'application 
+## Application
 
-Trouvez une méthode pour vérifier les valeurs fausses JS.
+En utilisant un script vérifiez les valeurs fausses en JS.
 
+```js
+console.log( 0 ? 'vrai' : 'faux'); // faux
+console.log( NaN ? 'vrai' : 'faux'); // faux
+console.log( "" ? 'vrai' : 'faux'); // faux
+
+/*
+Attention une chaîne de caractères avec que des espaces n'est pas faux 
+console.log( "   " ? 'vrai' : 'faux'); // vraie
+*/
+console.log(undefined ? 'vrai': 'faux'); // faux
+console.log(false ? 'vrai': 'faux'); // faux
+console.log("" ? 'vrai': 'faux'); // faux
+console.log('' ? 'vrai': 'faux'); // faux
+console.log(`` ? 'vrai': 'faux'); // faux
+console.log(null ? 'vrai': 'faux'); // faux
+/*
+Attention une chaîne de caractères avec que des espaces n'est pas faux 
+console.log( "false" ? 'vrai' : 'faux'); // vraie
+*/
+```
 
 ## Exercice tests logiques
 
