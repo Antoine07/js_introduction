@@ -6,6 +6,8 @@
 0, NaN, undefined, false, "", '', ``, null
 ```
 
+Notez que tout ce qui est vrai en JS c'est tout sauf ce qui est faux.
+
 - Evaluation courcicuit, par exemple user n'est pas défini, mais ne sera pas évalué :
 
 ```js
