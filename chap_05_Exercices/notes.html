@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Notes</h1>
+    <div class="root">
+    </div>
+    <script>
+      // Code JS
+    let notes = [11, 12, 16, 11, 15, 17];
+    const container = document.querySelector('.root');
+    const ul = document.createElement('ul');
+    for(let i = 0 ; i < notes.length; i++){
+        const li = document.createElement('li');
+        li.innerHTML =  `Note : ${notes[i]}`;
+        ul.appendChild(li);
+    }
+    container.appendChild(ul); // contient tous les li
+
+    // on ne peut pas diviser par zéro voir plus bas
+    if(notes.length > 0){
+        // Calculez la moyenne
+        let sum = 0 ;
+        /*  
+            tour des boucles pour calculer la somme
+
+            (i=0). sum = 0 + 11  = 11
+            (i=1). sum = 11 + 12 = 23
+            (i=2). sum = 23 + 16 = 39
+            ...
+
+        */
+        for(let i = 0 ; i < notes.length; i++){
+            sum = sum + notes[i] ;
+        }
+// Math.floor troncature si on multiplie par 10 dans Math.floor puis on divise après par 10 on aura un chiffre significatif après la virgule
+        let average = Math.floor( sum / notes.length * 10 ) / 10; 
+
+        const div = document.createElement('div');
+        div.innerHTML = `Average : ${average}`;
+        container.appendChild(div);
+    }   
+
+    </script>
+</body>
+</html>
