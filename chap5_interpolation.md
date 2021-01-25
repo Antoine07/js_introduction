@@ -72,7 +72,7 @@ Créez un fichier html notes.html
 </html>
 ```
 
-Affichez dans la chaîne de caractères suivantes les notes dans le tableau notes voir ci-après, le code doit s'affichez (dynamiquement) dans le div.root de la page HTML notes.html. Utilisez les cotes couchées pour gérer l'insertion des valeurs.
+1. Affichez dans la chaîne de caractères suivantes les notes dans le tableau notes voir ci-après, le code doit s'affichez (dynamiquement) dans le div.root de la page HTML notes.html. Utilisez les cotes couchées pour gérer l'insertion des valeurs.
 
 ```html
  <ul>
@@ -85,3 +85,5 @@ Affichez dans la chaîne de caractères suivantes les notes dans le tableau note
 ```js
 let notes = [11, 12, 16];
 ```
+
+2. Ajoutez la moyenne dans un div après la liste des notes
