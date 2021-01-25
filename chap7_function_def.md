@@ -34,6 +34,25 @@ ttc(100.50, "hello"); // Erreur de type
 ttc("100", ".3"); // 130
 ```
 
+Remarques :
+
+Pour savoir si une valeur dans une variable est un nombre flottant (nombre à virgule) utilisez le code suivant.
+
+L'expression suivante vaut true si parseFloat à réussi à caster val en flottant. Le == ne vérifie pas le type des valeurs :
+
+```js
+let val = 10.8 ;
+
+parseFloat(val) == val ; 
+
+```
+
+Par exemple si on compare un flottant dans une chaîne de caractères et un floattant classique, la condition suivante renverra true. JS fait ce que l'on appelle du transtipage dans l'évaluation.
+
+```js
+"12.8" == 12.8
+```
+
 ## Syntaxe par décomposition
 
 Si vous avez une fonction avec de nombreux paramètres ou des paramètres variables, utilisez le spread operator pour passer les valeurs à la fonction :
