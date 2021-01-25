@@ -66,12 +66,13 @@ Créez un fichier html notes.html
     </div>
     <script>
       // Code JS
+      let notes = [11, 12, 16];
     </script>
 </body>
 </html>
 ```
 
-Affichez dans la chaîne de caractères suivantes les notes dans le tableau notes voir ci-après, le code doit s'affichez dans le div.root de la page HTML notes.html
+Affichez dans la chaîne de caractères suivantes les notes dans le tableau notes voir ci-après, le code doit s'affichez (dynamiquement) dans le div.root de la page HTML notes.html. Utilisez les cotes couchées pour gérer l'insertion des valeurs.
 
 ```html
  <ul>
