@@ -8,6 +8,19 @@
 
 Notez que tout ce qui est vrai en JS c'est tout sauf ce qui est faux.
 
+Remarques vous pouvez tester les valeurs vraies ou fausses à l'aide d'un simple ternaire :
+
+```js
+console.log( 1 ? 'yes' : 'no'); // yes
+console.log( 0? 'yes' : 'no'); // no
+
+console.log( NaN ? 'yes' : 'no'); // no
+
+console.log( "bonjour le monde"  ? 'yes' : 'no'); // yes
+```
+
+## Evaluations courcicuits 
+
 - Evaluation courcicuit, par exemple user n'est pas défini, mais ne sera pas évalué :
 
 ```js
