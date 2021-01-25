@@ -1,4 +1,6 @@
-# Ce qui est faut en JS
+# Tests logiques
+
+## Ce qui est faux en JS
 
 0, NaN, undefined, false, "", '', ``, null
 
