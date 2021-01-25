@@ -135,5 +135,12 @@ let cd9 = = (0!= 0 && 1/0 == 2);
 
 ```js
 let cd9 = = (0 === 0 || 1/0 == 2);
+```
+
+
+11.
+```js
+
+let cd10 = (false || false) && ( (!false && false) || true );
 
 ```
