@@ -2,7 +2,9 @@
 
 ## Ce qui est faux en JS
 
+```text
 0, NaN, undefined, false, "", '', ``, null
+```
 
 - Evaluation courcicuit, par exemple user n'est pas défini, mais ne sera pas évalué :
 
